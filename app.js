@@ -11,7 +11,7 @@ const application = new Server(express, routes, middlewares);
 
 (async () => {
     try {
-        // await db.associateAll(db.sequelize.models)
+        await db.associateAll(db.sequelize.models)
         await db.sequelize.sync({atler: true})
         await application.listen(config.app_port);
     } catch (e) {

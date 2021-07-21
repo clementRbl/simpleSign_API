@@ -1,4 +1,4 @@
-import {signatureRouter} from './Signature';
-const routes = [signatureRouter]
+import {adminRouter} from './Admin';
+const routes = [ adminRouter]
 
 export default routes;

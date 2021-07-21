@@ -5,9 +5,9 @@ class SignatureDao extends Model {
     static init(sequelize) {
         return super.init(
             {
-                date: DataTypes.DATE,
+                typeDate: DataTypes.STRING,
                 isSignedFromProfessor: DataTypes.BOOLEAN
-            }, {sequelize, modelName: 'Signature'}
+            }, {sequelize, modelName: 'Signature', freezeTableName: true}
         );
     }
 };

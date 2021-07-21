@@ -1,10 +1,8 @@
-
-
 class SignatureEntity {
     
-    constructor({id, date, isSignedFromProfessor = []}) {
+    constructor({id, typeDate, isSignedFromProfessor }) {
         this.id = id;
-        this.date = date
+        this.typeDate = typeDate
         this.isSignedFromProfessor = isSignedFromProfessor
     }
 }
